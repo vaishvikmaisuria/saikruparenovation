@@ -1,17 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css"; // Ensure the CSS file matches the new design
 import Image from "next/image";
 import Link from "next/link";
 
 const Header: React.FC = () => {
-	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-	const toggleMobileMenu = () => {
-		setIsMobileMenuOpen(!isMobileMenuOpen);
-	};
-
 	return (
 		<header className="header-container">
 			<nav className="header-nav">
@@ -25,7 +19,7 @@ const Header: React.FC = () => {
 						priority
 					/>
 				</div>
-				<ul className={isMobileMenuOpen ? "menu open" : "menu"}>
+				<ul className="menu">
 					<li>
 						<Link href="/">Home</Link>
 					</li>
@@ -33,11 +27,11 @@ const Header: React.FC = () => {
 						<Link href="/about">About</Link>
 					</li>
 					{/* <li>
-						<Link href="/services">Services</Link>
-					</li>
-					<li>
-						<Link href="/projects">Projects</Link>
-					</li> */}
+                        <Link href="/services">Services</Link>
+                    </li>
+                    <li>
+                        <Link href="/projects">Projects</Link>
+                    </li> */}
 				</ul>
 				<div className="">
 					<Link href="/contacts">Contacts</Link>
