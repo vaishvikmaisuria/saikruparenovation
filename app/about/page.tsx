@@ -54,8 +54,8 @@ const About: React.FC = () => {
 
 					<h2>📞 Get in Touch</h2>
 					<p>
-						Feel free to reach out if you'd like to collaborate or
-						learn more about my work. Together, we can create
+						Feel free to reach out if you&apos;d like to collaborate
+						or learn more about my work. Together, we can create
 						something extraordinary.
 					</p>
 				</section>
