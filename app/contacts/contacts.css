@@ -1,0 +1,119 @@
+.contacts-container {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+	line-height: 1.8;
+	padding: 20px;
+	width: 100%; /* Full width of the screen */
+	min-height: calc(
+		100vh - 80px
+	); /* Ensure the container takes up the remaining height below the header */
+	margin-top: 60; /* Remove any margin */
+	background: linear-gradient(
+		135deg,
+		#f5f7fa,
+		#c3cfe2
+	); /* Subtle gradient background */
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start; /* Align content to the top */
+	align-items: center; /* Center content horizontally */
+	box-sizing: border-box; /* Include padding in height calculations */
+}
+
+.contacts-title {
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #222;
+}
+
+.contacts-description {
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 40px;
+	color: #555;
+}
+
+.contact-form {
+	width: 100%;
+	max-width: 600px; /* Limit the form width for readability */
+	display: flex;
+	flex-direction: column;
+	gap: 20px; /* Add spacing between form elements */
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-group label {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+	border-color: #0071e3;
+	box-shadow: 0 0 5px rgba(0, 113, 227, 0.5);
+}
+
+textarea {
+	resize: vertical;
+	min-height: 100px;
+}
+
+.submit-button {
+	padding: 12px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #0071e3;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+	background-color: #005bb5;
+	transform: scale(1.02);
+}
+
+.submit-button:active {
+	transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.contacts-container {
+		padding: 20px;
+		min-height: auto; /* Allow the container to adjust height on smaller screens */
+	}
+
+	.contacts-title {
+		font-size: 28px;
+	}
+
+	.contacts-description {
+		font-size: 14px;
+	}
+
+	.submit-button {
+		font-size: 14px;
+	}
+}

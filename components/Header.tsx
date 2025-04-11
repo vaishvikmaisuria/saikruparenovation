@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import "./Header.css"; // Assuming you will create a CSS file for styling
+import "./Header.css"; // Ensure the CSS file matches the new design
 import Image from "next/image";
+import Link from "next/link";
 
 const Header: React.FC = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -12,39 +13,35 @@ const Header: React.FC = () => {
 	};
 
 	return (
-		<header>
-			<nav>
-				<Image
-					src="/saikrupa.png"
-					alt="Saikrupa Logo"
-					width={180}
-					height={38}
-					className="logo"
-					priority
-				/>
-				<button
-					className="mobile-menu-toggle"
-					onClick={toggleMobileMenu}
-				>
-					☰
-				</button>
+		<header className="header-container">
+			<nav className="header-nav">
+				<div className="logo-container">
+					<Image
+						src="/saikrupa.png"
+						alt="Saikrupa Logo"
+						width={180}
+						height={38}
+						className="logo"
+						priority
+					/>
+				</div>
 				<ul className={isMobileMenuOpen ? "menu open" : "menu"}>
 					<li>
-						<a href="#home">Home</a>
+						<Link href="/">Home</Link>
 					</li>
 					<li>
-						<a href="#about">About</a>
+						<Link href="/about">About</Link>
+					</li>
+					{/* <li>
+						<Link href="/services">Services</Link>
 					</li>
 					<li>
-						<a href="#services">Services</a>
-					</li>
-					<li>
-						<a href="#projects">Projects</a>
-					</li>
-					<li>
-						<a href="#contacts">Contacts</a>
-					</li>
+						<Link href="/projects">Projects</Link>
+					</li> */}
 				</ul>
+				<div className="">
+					<Link href="/contacts">Contacts</Link>
+				</div>
 			</nav>
 		</header>
 	);

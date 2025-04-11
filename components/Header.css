@@ -1,78 +1,77 @@
-header {
-	background-color: #333;
-	padding: 1rem;
-	width: 100%;
-}
-
-nav {
+.header-container {
+	width: 100%; /* Full width of the screen */
+	background-color: #000; /* Black background */
+	color: #fff; /* White text */
+	position: fixed; /* Fix the header at the top */
+	top: 0;
+	left: 0;
+	z-index: 1000; /* Ensure it stays above other elements */
+	height: 80px; /* Set a fixed height for the header */
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	width: 100%;
+	justify-content: center; /* Center the content horizontally */
+	padding: 0 20px;
 }
 
-nav ul {
-	list-style: none;
+.header-nav {
 	display: flex;
-	justify-content: space-around;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1200px; /* Optional: Limit the width of the header content */
+}
+
+.logo-container {
+	flex: 1; /* Align logo to the left */
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 100%; /* Match the height of the header */
+}
+
+.logo {
+	height: 60px; /* Explicitly set the height of the logo */
+	width: auto; /* Maintain the aspect ratio of the logo */
+	object-fit: contain; /* Ensure the logo scales properly */
+}
+
+.menu {
+	flex: 2; /* Center the menu */
+	display: flex;
+	justify-content: center; /* Center the menu items horizontally */
+	gap: 20px; /* Add spacing between menu items */
+	list-style: none;
 	margin: 0;
 	padding: 0;
-	width: 100%;
 }
 
-nav ul li {
-	margin: 0;
-}
-
-nav ul li a {
-	color: white;
+.menu li a {
 	text-decoration: none;
-	padding: 0.5rem 1rem;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-	background-color: #555;
+.menu li a:hover {
+	color: #0071e3; /* Blue hover effect */
 }
 
-.mobile-menu-toggle {
-	display: none;
-	background: none;
-	border: none;
-	color: white;
-	font-size: 1.5rem;
+.contacts-container {
+	flex: 1; /* Align contacts to the right */
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-	.mobile-menu-toggle {
-		display: block;
-	}
-
-	nav ul {
-		display: none;
-		flex-direction: column;
-		width: 100%;
-	}
-
-	nav ul.menu.open {
-		display: flex;
-	}
-
-	nav ul li {
-		text-align: center;
-		margin: 0.5rem 0;
-	}
+.contacts-container a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	transition: color 0.3s ease;
 }
 
-/* Web Styles */
-@media (min-width: 769px) {
-	header {
-		width: 100%;
-	}
-}
-
-/* Active Menu Item Styles */
-nav ul li.active a {
-	background-color: #555;
-	color: yellow; /* Example color for active menu item */
+.contacts-container a:hover {
+	color: #0071e3; /* Blue hover effect */
 }
