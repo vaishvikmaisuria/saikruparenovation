@@ -21,8 +21,8 @@ const About: React.FC = () => {
 					/>
 					<h1 className="hero-title">I am Pratik Patel</h1>
 					<p className="hero-subtitle">
-						"Design is not just what it looks like and feels like.
-						Design is how it works."
+						Design is not just what it looks like and feels like.
+						Design is how it works.
 					</p>
 				</section>
 
