@@ -36,12 +36,12 @@
 }
 
 .menu {
-	flex: 2; /* Center the menu */
+	flex: 6; /* Center the menu */
 	display: flex;
 	justify-content: center; /* Center the menu items horizontally */
-	gap: 20px; /* Add spacing between menu items */
+	gap: 25px; /* Add spacing between menu items */
 	list-style: none;
-	margin: 0;
+	margin: 0 0 0 -100px; /* Adjust margin to align with header */
 	padding: 0;
 }
 
