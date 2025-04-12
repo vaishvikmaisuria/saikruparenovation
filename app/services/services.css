@@ -1,0 +1,93 @@
+body {
+  background-color: #f4f4f4; /* Light gray background */
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.services-container {
+  margin: 20% auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #fff; /* White background for content */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.services-container h1 {
+  text-align: center;
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.services-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services-container li {
+  background: url("/images/hammer-icon.png") no-repeat left center; /* Add a hammer icon */
+  background-size: 24px;
+  padding-left: 40px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #555;
+}
+
+.services-container li:hover {
+  color: #ffcc00; /* Highlight text on hover */
+  cursor: pointer;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+  .services-container {
+    padding: 15px;
+    margin: 10px;
+    max-width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .services-container h1 {
+    font-size: 24px; /* Smaller font size for headings */
+  }
+
+  .services-container li {
+    font-size: 16px; /* Smaller font size for list items */
+    padding-left: 35px; /* Adjust padding for smaller screens */
+  }
+
+  header {
+    font-size: 20px; /* Smaller header font size */
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-container {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .services-container h1 {
+    font-size: 20px;
+  }
+
+  .services-container li {
+    font-size: 14px;
+    padding-left: 30px;
+  }
+
+  header {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  margin-top: 50px;
+}

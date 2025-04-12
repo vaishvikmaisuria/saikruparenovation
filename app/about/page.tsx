@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Header from "../../components/Header"; // Import the Header component
 import "./about.css"; // Ensure the CSS file matches the new design
 
@@ -11,15 +10,6 @@ const About: React.FC = () => {
 			<Header /> {/* Add the Header component */}
 			<div className="about-container">
 				<section className="hero-section">
-					<Image
-						src="/pratik.png" // Replace with your image
-						alt="Steve Jobs Style Portrait"
-						width={300}
-						height={300}
-						className="profile-image"
-						priority
-					/>
-					<h1 className="hero-title">I am Pratik Patel</h1>
 					<p className="hero-subtitle">
 						Design is not just what it looks like and feels like.
 						Design is how it works.

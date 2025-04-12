@@ -26,10 +26,10 @@ const Header: React.FC = () => {
 					<li>
 						<Link href="/about">About</Link>
 					</li>
-					{/* <li>
+					<li>
                         <Link href="/services">Services</Link>
                     </li>
-                    <li>
+                    {/*<li>
                         <Link href="/projects">Projects</Link>
                     </li> */}
 				</ul>
